@@ -1,0 +1,61 @@
+{
+	"ABI version": 2,
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addPurchase",
+			"inputs": [
+				{"name":"_name","type":"bytes"},
+				{"name":"_amount","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deletePurchase",
+			"inputs": [
+				{"name":"number","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "buy",
+			"inputs": [
+				{"name":"number","type":"uint32"},
+				{"name":"cost","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getStatisticsOfPurchases",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"paidPurchases","type":"uint256"},
+				{"name":"unpaidPurchases","type":"uint256"},
+				{"name":"totalPayment","type":"uint256"}
+			]
+		},
+		{
+			"name": "getPurchasesList",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"number","type":"uint256"},{"name":"name","type":"bytes"},{"name":"amount","type":"uint256"},{"name":"timestamp","type":"uint256"},{"name":"bought","type":"bool"},{"name":"cost","type":"uint256"}],"name":"purchasesArr","type":"tuple[]"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
